@@ -1,0 +1,204 @@
+@import "../blocks/variables.scss";
+@import "../blocks/fonts.scss";
+
+body {
+	font-size: 14px;
+	font-family: "ubunturegular";
+	min-height: 100vh;
+	background-image: url(../img/bgItemLight.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px 30px 25px 30px;
+	box-sizing: border-box;
+}
+
+.main {
+	&__title {
+		margin-top: 0;
+		margin-bottom: 10px;
+		font-size: 28px;
+	}
+
+	&__subtitle {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+}
+
+.form {
+	&__main {
+		margin-bottom: 35px;
+	}
+
+	&__item {
+		display: block;
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+
+		> .input {
+			width: 195px;
+		}
+	}
+
+	&__itemText {
+		display: inline-block;
+		width: 125px;
+	}
+
+	&__group {
+		display: inline-flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 195px;
+
+		> .input {
+			width: 50px;
+			text-align: center;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		> label {
+			min-width: 100%;
+
+			&:not(:last-child) {
+				margin-bottom: 14px;
+			}
+		}
+	}
+
+	&__groupText {
+		font-size: 11px;
+		margin-top: 5px;
+	}
+
+	&__submit {
+		margin-right: 15px;
+	}
+
+	&__cancel {
+	}
+}
+
+@import "../blocks/btn/btn.scss";
+
+.footer {
+	font-family: "montserratregular";
+	text-align: center;
+	letter-spacing: 1px;
+
+	time {
+		display: inline-block;
+	}
+
+	p {
+		display: inline-block;
+		margin: 0;
+	}
+
+	a {
+		margin-left: 8px;
+		margin-right: 8px;
+		border-bottom: 1px solid transparent;
+		text-decoration: none;
+	}
+}
+
+@import "../blocks/chosen/chosen.scss";
+@import "../blocks/radio/radio.scss";
+
+.lightTheme {
+	background-color: $bgColor;
+
+	.main {
+		&__title {
+			color: $fontColor;
+		}
+
+		&__subtitle {
+			color: $inputBorderColor;
+		}
+	}
+
+	.form {
+		&__itemText {
+			color: $inputBorderColor;
+		}
+
+		&__group {
+			span {
+				color: $inputBorderColor;
+
+				&.form__groupText {
+					color: $inputBgColor;
+				}
+			}
+		}
+	}
+
+	.footer {
+		color: $inputBorderColor;
+
+		a {
+			color: $btnColor;
+			border-bottom: 1px solid rgba(42, 116, 219, 0.2);
+		}
+	}
+}
+
+.darkTheme {
+	background-color: $bgColorDark;
+
+	.main {
+		&__title {
+			color: $fontColorDark;
+		}
+
+		&__subtitle {
+			color: $inputBorderColorDark;
+		}
+	}
+
+	.form {
+		&__itemText {
+			color: $inputBorderColorDark;
+		}
+
+		&__group {
+			span {
+				color: $inputBorderColorDark;
+
+				&.form__groupText {
+					color: $inputBgColorDark;
+				}
+			}
+		}
+	}
+
+	.footer {
+		color: $inputBorderColorDark;
+
+		a {
+			color: $btnColorDark;
+			border-bottom: 1px solid rgba(170, 201, 241, 0.2);
+			transition: all 0.4s ease;
+
+			&:hover {
+				border-color: rgba(170, 201, 241, 0.6);
+			}
+
+			&:active {
+				border-color: rgba(170, 201, 241, 1);
+			}
+		}
+	}
+}
+
+@import "../blocks/input/input.scss";

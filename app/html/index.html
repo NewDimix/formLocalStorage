@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../blocks/head/head.html', {
+    'title': 'Форма с LocalStorage',
+    'contentText': 'Форма с LocalStorage',
+    'keywordsText': 'слайдер',
+    'googleVerificationToken': '',
+    'programGenerationWithPage': '',
+    'previewBigImg': '',
+    'previewSmallImg': '',
+    'facebookUrlPage': '',
+    'facebookContentType': 'website',
+    'twitterNickname': '@NewDimix',
+    'twitterNicknameCompany': '@NewDimix',
+    'GoogleAuthorshipAuthor': '',
+    'GoogleAuthorshipPublisher': '',
+    'color': '#333333',
+    })
+</head>
+
+<body class="lightTheme">
+    <main class="main">
+        <h1 class="main__title">Preferences</h1>
+        <p class="main__subtitle">On this page you can configure the main system parameters available for customization
+        </p>
+
+        <form id="form" method="" action="#" class="form">
+            <div class="form__main">
+                <label class="form__item">
+                    <span class="form__itemText">Company Title</span>
+                    <input class="input" type="text" name="companyTitle" placeholder="Default">
+                </label>
+
+                <label class="form__item">
+                    <span class="form__itemText">First Day</span>
+                    <select id="firstDayId" class="chosenSelect input" name="firstDay">
+                        <option value="monday">Monday</option>
+                        <option value="sunday">Sunday</option>
+                        <option value="system">System</option>
+                    </select>
+                </label>
+
+                <label class="form__item">
+                    <span class="form__itemText">Container Width</span>
+                    <select id="containerWidthId" class="chosenSelect input" name="containerWidth">
+                        <option value="fixed1">Fixed</option>
+                        <option value="fixed2">Fixed 2</option>
+                        <option value="fixed3">Fixed 3</option>
+                    </select>
+                </label>
+
+                <label class="form__item">
+                    <span class="form__itemText">Homepage</span>
+                    <select id="homepageId" class="chosenSelect input" name="homepage">
+                        <option value="starredProjects">Starred Projects</option>
+                        <option value="starredProjects2">Starred Projects 2</option>
+                        <option value="starredProjects3">Starred Projects 3</option>
+                    </select>
+                </label>
+
+                <label class="form__item">
+                    <span class="form__itemText">Indent Size</span>
+                    <input class="input" type="number" name="indentSize" placeholder="Default">
+                </label>
+
+                <div class="form__item">
+                    <span class="form__itemText">Personal Code</span>
+
+                    <div class="form__group">
+                        <input class="input" type="number" name="part1" min="1000" max="9999" minlength="4"
+                            maxlength="4">
+                        <span>-</span>
+                        <input class="input" type="number" name="part2" min="1000" max="9999" minlength="4"
+                            maxlength="4">
+                        <span>-</span>
+                        <input class="input" type="number" name="part3" min="1000" max="9999" minlength="4"
+                            maxlength="4">
+                        <span class="form__groupText">12 digits</span>
+                    </div>
+                </div>
+
+                <div class="form__item">
+                    <span class="form__itemText">Theme</span>
+
+                    <div class="form__group">
+                        <input class="radio" name="theme" type="radio" id="light" value="light" checked>
+                        <label for="light">Light</label>
+                        <input class="radio" name="theme" type="radio" id="dark" value="dark">
+                        <label for="dark">Dark</label>
+                    </div>
+                </div>
+            </div>
+
+            <input id="btnSubmit" class="form__submit btn btn_bg" type="submit" value="Apply and Save">
+            <input class="form__cancel btn btn_bgNone" type="reset" value="Cancel">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <time>2020-2022</time>
+        <p>
+            <a href="#">Terms of Service</a>and<a href="#">Conditions</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js?v=1"></script>
+</body>
+
+</html>

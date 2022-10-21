@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en"><head><!--
+@ include('../blocks/head/head.html', {
+'title': 'Тест',
+'contentText': 'Тестовое задание',
+'keywordsText': 'первое, второе, третье',
+'googleVerificationToken': '',
+'programGenerationWithPage': '',
+'previewBigImg': '',
+'previewSmallImg': '',
+'facebookUrlPage': '',
+'facebookContentType': 'website', // по умолчанию
+'twitterNickname': '@NewDimix',
+'twitterNicknameCompany': '@NewDimix',
+'GoogleAuthorshipAuthor': 'https://plus.google.com/[Google+_Profile]/posts',
+'GoogleAuthorshipPublisher': 'https://plus.google.com/[Google+_Page_Profile]',
+'color': '#333333',
+})
+--><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="stylesheet" href="css/style.css?v=1"><!-- <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+<link type="Image/x-icon" href="favicon.ico" rel="icon"> --><title>Форма с LocalStorage</title><meta name="description" content="Форма с LocalStorage"><meta name="keywords" content="слайдер"><meta content="true" name="HandheldFriendly"><meta content="width" name="MobileOptimized"><meta content="yes" name="apple-mobile-web-app-capable"><meta id="m380" name="viewport" content="width=device-width,initial-scale=1"><script>if (screen.width < 380) {
+        var mvp = document.getElementById('m380');
+        mvp.setAttribute('content', 'width=380, user-scalable=0');
+    };
+
+    window.addEventListener("resize", function () {
+        var mvp = document.getElementById('m380');
+        mvp.setAttribute('content', 'width=device-width, user-scalable=0');
+
+        if (screen.width < 380) {
+            var mvp = document.getElementById('m380');
+            mvp.setAttribute('content', 'width=380, user-scalable=0');
+        }
+    }, false);</script><!-- Контролирует поведение поисковых систем при индексации страницы --><!-- Все поисковые системы --><!-- <meta name="robots" content="index,follow,noodp"> --><!-- Указание отдельно для Google --><!-- <meta name="googlebot" content="index,follow"> --><meta name="robots" content="noindex"><!-- Позволяет указать Google не показывать в поисковой выдаче поле для поиска по сайту --><!-- <meta name="google" content="nositelinkssearchbox"> --><!-- Позволяет указать Google не предлагать перевести эту страницу --><meta name="google" content="notranslate"><!-- Подтверждает авторство страницы в Google Search Console --><!-- <meta name="google-site-verification" content=""> --><!-- Тег указания ПО, которое сгенерировало эту страницу --><!-- <meta name="generator" content=""> --><!-- open graph Facebook--><!-- <meta property="og:url" content="">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Форма с LocalStorage">
+<meta property="og:description" content="Форма с LocalStorage">
+<meta property="og:image" content="@@previewImg"> --><!-- Twitter --><!-- <meta name="twitter:card" content="">
+<meta name="twitter:site" content="@NewDimix">
+<meta name="twitter:title" content="Форма с LocalStorage">
+<meta name="twitter:description" content="Форма с LocalStorage">
+<meta name="twitter:creator" content="@NewDimix"> --><!-- картинка не меньше 280х150, не более 1Мб --><!-- <meta name="twitter:image" content=""> --><!-- Google authorship --><!-- <link rel="author" href=""
+        data-mce-href="">
+    <link rel="publisher" href=""
+        data-mce-href=""> --><!-- Фавиконы и иконки сайта --><!-- <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"
+        data-mce-href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"
+        data-mce-href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"
+        data-mce-href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"
+        data-mce-href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"
+        data-mce-href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"
+        data-mce-href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"
+        data-mce-href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"
+        data-mce-href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"
+        data-mce-href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" data-mce-href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192"
+        data-mce-href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" data-mce-href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" data-mce-href="/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="msapplication-TileImage" content="">
+    <meta name="theme-color" content="#333333"> --><!-- Chrome, Firefox OS and Opera --><!-- <meta name="theme-color" content="#333333"> --><!-- Windows Phone --><!-- <meta name="msapplication-navbutton-color" content="#333333"> --><!-- iOS Safari --><!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> --><!-- Яндекс.Браузер --><!-- <meta name="viewport" content="ya-title=#333333,ya-dock=fade"> --><!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> --></head><body class="lightTheme"><main class="main"><h1 class="main__title">Preferences</h1><p class="main__subtitle">On this page you can configure the main system parameters available for customization</p><form id="form" method="" action="#" class="form"><div class="form__main"><label class="form__item"><span class="form__itemText">Company Title</span> <input class="input" type="text" name="companyTitle" placeholder="Default"></label> <label class="form__item"><span class="form__itemText">First Day</span> <select id="firstDayId" class="chosenSelect input" name="firstDay"><option value="monday">Monday</option><option value="sunday">Sunday</option><option value="system">System</option></select></label> <label class="form__item"><span class="form__itemText">Container Width</span> <select id="containerWidthId" class="chosenSelect input" name="containerWidth"><option value="fixed1">Fixed</option><option value="fixed2">Fixed 2</option><option value="fixed3">Fixed 3</option></select></label> <label class="form__item"><span class="form__itemText">Homepage</span> <select id="homepageId" class="chosenSelect input" name="homepage"><option value="starredProjects">Starred Projects</option><option value="starredProjects2">Starred Projects 2</option><option value="starredProjects3">Starred Projects 3</option></select></label> <label class="form__item"><span class="form__itemText">Indent Size</span> <input class="input" type="number" name="indentSize" placeholder="Default"></label><div class="form__item"><span class="form__itemText">Personal Code</span><div class="form__group"><input class="input" type="number" name="part1" min="1000" max="9999" minlength="4" maxlength="4"> <span>-</span> <input class="input" type="number" name="part2" min="1000" max="9999" minlength="4" maxlength="4"> <span>-</span> <input class="input" type="number" name="part3" min="1000" max="9999" minlength="4" maxlength="4"> <span class="form__groupText">12 digits</span></div></div><div class="form__item"><span class="form__itemText">Theme</span><div class="form__group"><input class="radio" name="theme" type="radio" id="light" value="light" checked="checked"> <label for="light">Light</label> <input class="radio" name="theme" type="radio" id="dark" value="dark"> <label for="dark">Dark</label></div></div></div><input id="btnSubmit" class="form__submit btn btn_bg" type="submit" value="Apply and Save"> <input class="form__cancel btn btn_bgNone" type="reset" value="Cancel"></form></main><footer class="footer"><time>2020-2022</time><p><a href="#">Terms of Service</a>and<a href="#">Conditions</a></p></footer><script src="js/script.js?v=1"></script></body></html>

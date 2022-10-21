@@ -1,0 +1,170 @@
+.radio {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+
+	& + label {
+		display: inline-flex;
+		align-items: center;
+		user-select: none;
+		cursor: pointer;
+		transition: all 0.4s ease;
+
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			flex-shrink: 0;
+			flex-grow: 0;
+			outline: 2px solid transparent;
+			outline-offset: 2px;
+			border-radius: 50%;
+			margin-right: 11px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 50% 50%;
+			box-sizing: border-box;
+			transition: all 0.4s ease;
+		}
+	}
+
+	&:focus {
+		+ label::before {
+		}
+	}
+
+	&:checked {
+		+ label::before {
+		}
+	}
+
+	&:not(:disabled) {
+		&:not(:checked) {
+			+ label {
+				&:hover {
+					/* стили при наведении курсора на радио */
+					&::before {
+					}
+				}
+			}
+		}
+
+		&:active {
+			+ label {
+				/* стили для активной радиокнопки (при нажатии на неё) */
+				&::before {
+				}
+			}
+		}
+	}
+
+	&:focus {
+		+ label {
+			/* стили для радиокнопки, находящейся в фокусе */
+			&::before {
+			}
+		}
+
+		&:not(:checked) {
+			+ label {
+				/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+				&::before {
+				}
+			}
+		}
+	}
+
+	&:checked {
+		+ label {
+			/* стили для радиокнопки, находящейся в состоянии checked */
+			&::before {
+			}
+		}
+	}
+
+	&:disabled {
+		+ label {
+			/* стили для радиокнопки, находящейся в состоянии disabled */
+			&::before {
+			}
+		}
+	}
+}
+
+.lightTheme {
+	.radio {
+		+ label {
+			color: $inputBorderColor;
+
+			&::before {
+				background-color: transparent;
+				outline-color: $inputBorderColor;
+			}
+		}
+
+		&:focus,
+		&:hover {
+			+ label::before {
+				box-shadow: 0 0 0 5px hsla(214, 72%, 81%, 0.3);
+			}
+		}
+
+		&:active {
+			+ label {
+				&::before {
+					background-color: rgba($btnBgColor, 0.5);
+				}
+			}
+		}
+
+		&:checked {
+			+ label {
+				color: $fontColor;
+
+				&::before {
+					outline-color: $btnBgColor;
+					background-color: $btnBgColor;
+				}
+			}
+		}
+	}
+}
+
+.darkTheme {
+	.radio {
+		+ label {
+			color: $inputBorderColorDark;
+
+			&::before {
+				background-color: transparent;
+				outline-color: $inputBorderColorDark;
+			}
+		}
+
+		&:focus {
+			+ label::before {
+				box-shadow: 0 0 0 5px hsla(214, 72%, 81%, 0.3);
+			}
+		}
+
+		&:active {
+			+ label {
+				&::before {
+					background-color: rgba($btnBgColorDark, 0.5);
+				}
+			}
+		}
+
+		&:checked {
+			+ label {
+				color: $fontColorDark;
+
+				&::before {
+					outline-color: $btnBgColorDark;
+					background-color: $btnBgColorDark;
+				}
+			}
+		}
+	}
+}
